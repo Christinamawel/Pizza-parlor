@@ -72,7 +72,49 @@
   <section id="checkout-section">
     <h4>your Total: <span id="total-cost"></span></h4>
     <form>
-
+      <label for="name"> Your Name:
+        <input id="name" type="text" required> 
+      </label>
+      <label for="phone"> Phone Number:
+        <input id="phone" type="tel" required> 
+      </label>
+      <fieldset>
+        <label for="delivery">
+          <input id="dilivery" value="delivery" type="radio" name="carryout-delivery"> Delivery (additional cost)
+        </label>
+        <label for="carryout">
+          <input id="carryout" value="carryout" type="radio" name="carryout-delivery" checked> Carry Out
+        </label>
+      </fieldset>
+      <div id="delivery-form">
+        <label for="address"> Address:
+          <input type="text">
+        </label>
+        <h4 id="delivery-cost-message">Total with Delivery cost: <span id="delivery-cost"></span></h4>
+      </div>
+      <fieldset>
+        <label for="in-store">
+          <input id="in-store" value="in-store" type="radio" name="pay" checked> Pay in Store
+        </label>
+        <label for="online">
+          <input id="online" value="online" type="radio" name="pay"> Pay Online
+        </label>
+      </fieldset>
+      <div id="pay-form">
+        <label for="card-name"> Name on Card:
+          <input id="card-name" type="text"> 
+        </label>
+        <label for="card-num"> Credit Card Number:
+          <input id="card-num" type="text"> 
+        </label>
+        <label for="ccv"> CCV:
+          <input id="ccv" type="text"> 
+        </label>
+        <label for="zip"> Zip code:
+          <input id="zip" type="text"> 
+        </label>
+      </div>
+      <button id="order-now" type="submit">Order now!</button>
     </form>
     <button>change order</button>
   </section>

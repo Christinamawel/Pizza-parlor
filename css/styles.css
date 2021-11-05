@@ -51,6 +51,13 @@ input {
   border-radius: 1em;
 }
 
+#order-now {
+  margin: .5em 0 1em 0;
+  font-size: 1.5rem;
+  background-color:rgb(6, 95, 21);
+  color:rgba(243, 241, 235, .9);
+}
+
 button {
   border: none;
   border-radius: .5em;
