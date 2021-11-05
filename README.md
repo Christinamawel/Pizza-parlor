@@ -41,7 +41,7 @@ Expected Output: 25
 
 ## Known Bugs
 
-* _no known bugs_
+* _designed for desktop. doesn't look great on mobile view but will work_
 
 ## License
 
