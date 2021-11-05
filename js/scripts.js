@@ -20,7 +20,7 @@ Order.prototype.price = function() {
       total += 6
       break;
   }
-  
+
   this.toppings.forEach(function(topping) {
     switch (topping) {
       case("cheese"):
@@ -50,7 +50,7 @@ Order.prototype.price = function() {
     }
   })
 
-  this.price = total;
+  this.totalPrice = total;
 }
 
 // UI Logic
@@ -60,10 +60,8 @@ $(document).ready(function() {
     const size = $('input[name="size"]:checked').val();
     const toppings = $('.toppings:checked').map(function() {return this.value;}).get();
     const sides = $('.sides:checked').map(function() {return this.value;}).get();
-    console.log(toppings, size, sides);
     const order = new Order(toppings, size, sides);
-    console.log(order);
-    order.price()
-    console.log(order)
+    order.price();
+    $("#total-cost").text("$" + order.totalPrice)
   })
 })

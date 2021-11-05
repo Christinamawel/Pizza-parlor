@@ -4,8 +4,61 @@ body {
   background-color: rgb(5, 5, 5);
   color: rgb(243, 241, 235);
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 1em;
 }
 
 h1 {
   font-size: 5rem;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  padding: 1em 0 .5em 0;
+}
+
+legend {
+  color:rgb(162, 209, 170);
+}
+
+input {
+  margin: .5em;
+}
+
+#order-btn {
+  border: none;
+  border-radius: .5em;
+  background-color:rgba(243, 241, 235, .9);
+  color:rgb(6, 95, 21);
+  padding: .5em 1em;
+  font-size: 1.3rem;
+  margin-top: .5em;
+}
+
+#order-btn:hover {
+  font-weight: bold;
+}
+
+#checkout-section {
+  background-color:rgba(243, 241, 235, .9);
+  color:rgb(6, 95, 21);
+  width: 80%;
+  margin: 2.5em auto;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+button {
+  border: none;
+  border-radius: .5em;
+  background-color:rgb(5, 5, 5);
+  color:rgb(162, 209, 170);
+  padding: .5em 1em;
+}
+
+button:hover {
+  font-weight: bold;
 }

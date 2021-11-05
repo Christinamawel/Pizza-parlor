@@ -19,55 +19,62 @@
     <fieldset>
       <legend>Choose Your Pizza Size:</legend>
       <label for="small">
-        <input id="small" value="small" type="radio" name="size">Small
+        <input id="small" value="small" type="radio" name="size"> Small
       </label>
       <label for="medium">
-        <input id="medium" value="medium" type="radio" name="size" checked>Medium
+        <input id="medium" value="medium" type="radio" name="size" checked> Medium
       </label>
       <label for="large">
-        <input id="large" value="large" type="radio" name="size">Large
+        <input id="large" value="large" type="radio" name="size"> Large
       </label>
     </fieldset>
     <fieldset id="topping-fieldset">
       <legend>Choose Your Topping:</legend>
       <label for="cheese"> 
-        <input id="cheese" value="cheese" type="checkbox" name="toppings" class="toppings" checked>Cheese 
+        <input id="cheese" value="cheese" type="checkbox" name="toppings" class="toppings" checked> Cheese 
       </label>
       <label for="pepperoni"> 
-        <input id="pepperoni" value="pepperoni" type="checkbox" name="toppings" class="toppings">Pepperoni 
+        <input id="pepperoni" value="pepperoni" type="checkbox" name="toppings" class="toppings"> Pepperoni 
       </label>
       <label for="sausage"> 
-        <input id="sausage" value="sausage" type="checkbox" name="toppings" class="toppings">Sausage
+        <input id="sausage" value="sausage" type="checkbox" name="toppings" class="toppings"> Sausage
       </label>
       <label for="olives"> 
-        <input id="olives" value="olives" type="checkbox" name="toppings" class="toppings">Olives
+        <input id="olives" value="olives" type="checkbox" name="toppings" class="toppings"> Olives
       </label>
       <label for="mushrooms"> 
-        <input id="mushrooms" value="mushrooms" type="checkbox" name="toppings" class="toppings">Mushrooms
+        <input id="mushrooms" value="mushrooms" type="checkbox" name="toppings" class="toppings"> Mushrooms
       </label>
       <label for="onion"> 
-        <input id="onion" value="onion" type="checkbox" name="toppings" class="toppings">Onion 
+        <input id="onion" value="onion" type="checkbox" name="toppings" class="toppings"> Onion 
       </label>
       <label for="peppers"> 
-        <input id="peppers" value="peppers" type="checkbox" name="toppings" class="toppings">Green Peppers
+        <input id="peppers" value="peppers" type="checkbox" name="toppings" class="toppings"> Green Peppers
       </label>
       <label for="jalapenos"> 
-        <input id="jalapenos" value="jalapenos" type="checkbox" name="toppings" class="toppings">Jalapenos
+        <input id="jalapenos" value="jalapenos" type="checkbox" name="toppings" class="toppings"> Jalapenos
       </label>
     </fieldset>
     <fieldset id="side-fieldset">
       <legend>Choose Your sides:</legend>
       <label for="bread">
-        <input id="bread" value="bread" type="checkbox" name="sides" class="sides">Garlic Bread
+        <input id="bread" value="bread" type="checkbox" name="sides" class="sides"> Garlic Bread
       </label>
       <label for="salad">
-        <input id="salad" value="salad" type="checkbox" name="sides" class="sides">Caesar Salad
+        <input id="salad" value="salad" type="checkbox" name="sides" class="sides"> Caesar Salad
       </label>
       <label for="coke">
-        <input id="coke" value="coke" type="checkbox" name="sides" class="sides">2-Liter Cola
+        <input id="coke" value="coke" type="checkbox" name="sides" class="sides"> 2-Liter Cola
       </label>
     </fieldset>
-    <button type="submit">Order</button>
+    <button type="submit" id="order-btn">Order</button>
   </form>
+  <section id="checkout-section">
+    <h4>your Total: <span id="total-cost"></span></h4>
+    <form>
+
+    </form>
+    <button>change order</button>
+  </section>
 </body>
 </html>
