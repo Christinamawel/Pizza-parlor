@@ -1,11 +1,10 @@
 # _We Knead Pizza_
 
- <img src="img/pizza-David Benes.png" alt="picture of a pizza">
+ <img src="img/chalk-drawing-pizza.png" alt="picture of a pizza">
 
 #### _A mock website for a pizza restaurant_
 
 #### By _**Christina Welch**_
-#### pizza photo By _**David Benes on unsplash**_
 
 ## Technologies Used
 

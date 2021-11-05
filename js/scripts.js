@@ -62,6 +62,27 @@ $(document).ready(function() {
     const sides = $('.sides:checked').map(function() {return this.value;}).get();
     const order = new Order(toppings, size, sides);
     order.price();
-    $("#total-cost").text("$" + order.totalPrice)
+    $("#total-cost").text("$" + order.totalPrice);
+    $("#checkout-section").show();
+    $("#pizza-order-form").hide();
+
+    $("#delivery").click(function() {
+      let deliveryPrice = order.totalPrice + 5
+      $("#delivery-form").show();
+      $("#delivery-cost").text("$" + deliveryPrice);
+    })
+    $("#carryout").click(function() {
+      $("#delivery-form").hide();
+    })
+    $("#online").click(function() {
+      $("#pay-form").show();
+    })
+    $("#in-store").click(function() {
+      $("#pay-form").hide();
+    })
+
+    $("#change-order").click(function() {
+      location.reload();
+    })
   })
 })

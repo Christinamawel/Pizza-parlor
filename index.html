@@ -11,6 +11,16 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
+  <header>
+    <p id="nav-logo">We Knead Pizza</p>
+    <nav>
+      <ul>
+        <li class="nav-item" id="first-nav-item"><a href="#">About Us</a></li>
+        <li class="nav-item"><a href="#">Contact Us</a></li>
+        <li class="nav-item" id="nav-order-now"><a href="#pizza-order-form">Order Now!</a></li>
+      </ul>
+    </nav>
+  </header>
   <div id="container">
     <div id="hero">
       <div id="hero-text">
@@ -18,11 +28,14 @@
         <h2>Pizza too good to share!</h2>
       </div>
       <div id="hero-img">
-        <img src="img/pizza-David Benes.png" alt="picture of a pizza">
+        <img src="img/chalk-drawing-pizza.png" alt="picture of a pizza">
       </div>
     </div>
     <form id="pizza-order-form">
       <h3>Create Your Order</h3>
+      <div id="arrow-div">
+        <img id="arrow" src="img/sketch-arrow-down.png" alt="arrow pointing down">
+      </div>
       <fieldset>
         <legend>Choose Your Pizza Size:</legend>
         <label for="small">
@@ -87,7 +100,7 @@
         </label>
         <fieldset>
           <label for="delivery">
-            <input id="dilivery" value="delivery" type="radio" name="carryout-delivery"> Delivery (additional cost)
+            <input id="delivery" value="delivery" type="radio" name="carryout-delivery"> Delivery (additional cost)
           </label>
           <label for="carryout">
             <input id="carryout" value="carryout" type="radio" name="carryout-delivery" checked> Carry Out
@@ -123,7 +136,7 @@
         </div>
         <button id="order-now" type="submit">Order now!</button>
       </form>
-      <button>change order</button>
+      <button id="change-order">change order</button>
     </section>
   </div>
 </body>
