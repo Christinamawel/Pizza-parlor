@@ -1,6 +1,6 @@
 # _We Knead Pizza_
 
- <img src="img/pizza-David Benes.jpg" alt="picture of a pizza">
+ <img src="img/pizza-David Benes.png" alt="picture of a pizza">
 
 #### _A mock website for a pizza restaurant_
 
