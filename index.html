@@ -14,56 +14,60 @@
   <h1>We Knead Pizza</h1>
   <h2>Pizza too good to share!</h2>
   <img src="img/pizza-David Benes.png" alt="picture of a pizza">
-  <fieldset>
-    <ledgend>Choose Your Pizza Size:</ledgend>
-    <label for="small">
-      <input id="small" value="small" type="checkbox" name="size">Small
-    </label>
-    <label for="medium">
-      <input id="medium" value="medium" type="checkbox" name="size">Medium
-    </label>
-    <label for="large">
-      <input id="large" value="large" type="checkbox" name="size">Large
-    </label>
-  </fieldset>
-  <fieldset>
-    <ledgend>Choose Your Topping:</ledgend>
-    <label for="cheese"> 
-      <input id="cheese" value="cheese" type="checkbox" name="toppings">Cheese 
-    </label>
-    <label for="pepperoni"> 
-      <input id="pepperoni" value="pepperoni" type="checkbox" name="toppings">Pepperoni 
-    </label>
-    <label for="sausage"> 
-      <input id="sausage" value="sausage" type="checkbox" name="toppings">Sausage
-    </label>
-    <label for="olives"> 
-      <input id="olives" value="olives" type="checkbox" name="toppings">Olives
-    </label>
-    <label for="mushrooms"> 
-      <input id="mushrooms" value="mushrooms" type="checkbox" name="toppings">Mushrooms
-    </label>
-    <label for="onion"> 
-      <input id="onion" value="onion" type="checkbox" name="toppings">Onion 
-    </label>
-    <label for="peppers"> 
-      <input id="peppers" value="peppers" type="checkbox" name="toppings">Green Peppers
-    </label>
-    <label for="jalapenos"> 
-      <input id="jalapenos" value="jalapenos" type="checkbox" name="toppings">Jalapenos
-    </label>
-  </fieldset>
-  <fieldset>
-    <ledgend>Choose Your sides:</ledgend>
-    <label for="bread">
-      <input id="bread" value="bread" type="checkbox" name="sides">Garlic Bread
-    </label>
-    <label for="salad">
-      <input id="salad" value="salad" type="checkbox" name="sides">Caesar Salad
-    </label>
-    <label for="coke">
-      <input id="coke" value="coke" type="checkbox" name="sides">2-Liter Cola
-    </label>
-  </fieldset>
+  <form id="pizza-order-form">
+    <h3>Create Your Order</h3>
+    <fieldset>
+      <legend>Choose Your Pizza Size:</legend>
+      <label for="small">
+        <input id="small" value="small" type="radio" name="size">Small
+      </label>
+      <label for="medium">
+        <input id="medium" value="medium" type="radio" name="size" checked>Medium
+      </label>
+      <label for="large">
+        <input id="large" value="large" type="radio" name="size">Large
+      </label>
+    </fieldset>
+    <fieldset id="topping-fieldset">
+      <legend>Choose Your Topping:</legend>
+      <label for="cheese"> 
+        <input id="cheese" value="cheese" type="checkbox" name="toppings" class="toppings" checked>Cheese 
+      </label>
+      <label for="pepperoni"> 
+        <input id="pepperoni" value="pepperoni" type="checkbox" name="toppings" class="toppings">Pepperoni 
+      </label>
+      <label for="sausage"> 
+        <input id="sausage" value="sausage" type="checkbox" name="toppings" class="toppings">Sausage
+      </label>
+      <label for="olives"> 
+        <input id="olives" value="olives" type="checkbox" name="toppings" class="toppings">Olives
+      </label>
+      <label for="mushrooms"> 
+        <input id="mushrooms" value="mushrooms" type="checkbox" name="toppings" class="toppings">Mushrooms
+      </label>
+      <label for="onion"> 
+        <input id="onion" value="onion" type="checkbox" name="toppings" class="toppings">Onion 
+      </label>
+      <label for="peppers"> 
+        <input id="peppers" value="peppers" type="checkbox" name="toppings" class="toppings">Green Peppers
+      </label>
+      <label for="jalapenos"> 
+        <input id="jalapenos" value="jalapenos" type="checkbox" name="toppings" class="toppings">Jalapenos
+      </label>
+    </fieldset>
+    <fieldset id="side-fieldset">
+      <legend>Choose Your sides:</legend>
+      <label for="bread">
+        <input id="bread" value="bread" type="checkbox" name="sides" class="sides">Garlic Bread
+      </label>
+      <label for="salad">
+        <input id="salad" value="salad" type="checkbox" name="sides" class="sides">Caesar Salad
+      </label>
+      <label for="coke">
+        <input id="coke" value="coke" type="checkbox" name="sides" class="sides">2-Liter Cola
+      </label>
+    </fieldset>
+    <button type="submit">Order</button>
+  </form>
 </body>
 </html>

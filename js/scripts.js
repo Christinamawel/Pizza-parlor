@@ -8,6 +8,19 @@ const Order = function(toppings, size, sides) {
 
 Order.prototype.price = function() {
   let total = 0
+
+  switch (this.size) {
+    case("small"):
+      total += 2
+      break;
+    case("medium"):
+      total += 4
+      break;
+    case("large"):
+      total += 6
+      break;
+  }
+  
   this.toppings.forEach(function(topping) {
     switch (topping) {
       case("cheese"):
@@ -25,18 +38,6 @@ Order.prototype.price = function() {
     }
   })
 
-  switch (this.size) {
-    case("small"):
-      total += 2
-      break;
-    case("medium"):
-      total += 4
-      break;
-    case("large"):
-      total += 6
-      break;
-  }
-
   this.sides.forEach(function(side){
     switch (side) {
       case("bread"):
@@ -48,9 +49,21 @@ Order.prototype.price = function() {
         break;
     }
   })
-  console.log(total);
+
+  this.price = total;
 }
 
-const order = new Order(["cheese", "pepperoni", "olives"], "medium", ["bread"])
-console.log(order);
-order.price();
+// UI Logic
+$(document).ready(function() {
+  $("form#pizza-order-form").submit(function(event) {
+    event.preventDefault();
+    const size = $('input[name="size"]:checked').val();
+    const toppings = $('.toppings:checked').map(function() {return this.value;}).get();
+    const sides = $('.sides:checked').map(function() {return this.value;}).get();
+    console.log(toppings, size, sides);
+    const order = new Order(toppings, size, sides);
+    console.log(order);
+    order.price()
+    console.log(order)
+  })
+})
