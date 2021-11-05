@@ -36,19 +36,19 @@
       <div id="arrow-div">
         <img id="arrow" src="img/sketch-arrow-down.png" alt="arrow pointing down">
       </div>
-      <fieldset>
+      <fieldset class="new-pizza">
         <legend>Choose Your Pizza Size:</legend>
         <label for="small">
-          <input id="small" value="small" type="radio" name="size"> Small
+          <input id="small" value="small" type="radio" name="size" class="size"> Small
         </label>
         <label for="medium">
-          <input id="medium" value="medium" type="radio" name="size" checked> Medium
+          <input id="medium" value="medium" type="radio" name="size" class="size" checked> Medium
         </label>
         <label for="large">
-          <input id="large" value="large" type="radio" name="size"> Large
+          <input id="large" value="large" type="radio" name="size" class="size"> Large
         </label>
       </fieldset>
-      <fieldset id="topping-fieldset">
+      <fieldset id="topping-fieldset" class="new-pizza-toppings">
         <legend>Choose Your Topping:</legend>
         <label for="cheese"> 
           <input id="cheese" value="cheese" type="checkbox" name="toppings" class="toppings" checked> Cheese 
@@ -75,6 +75,9 @@
           <input id="jalapenos" value="jalapenos" type="checkbox" name="toppings" class="toppings"> Jalapenos
         </label>
       </fieldset>
+      <div id="more-pizza">
+      </div>
+      <!-- <div id="pizza-add" class="order-btn">Add another pizza</div> -->
       <fieldset id="side-fieldset">
         <legend>Choose Your sides:</legend>
         <label for="bread">
@@ -87,7 +90,7 @@
           <input id="coke" value="coke" type="checkbox" name="sides" class="sides"> 2-Liter Cola
         </label>
       </fieldset>
-      <button type="submit" id="order-btn">Order</button>
+      <button type="submit" class="order-btn">Order</button>
     </form>
     <section id="checkout-section">
       <h4>your Total: <span id="total-cost"></span></h4>

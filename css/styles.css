@@ -6,6 +6,7 @@ body {
   color: rgb(243, 241, 235);
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 header {
@@ -110,24 +111,32 @@ h3 {
 
 legend {
   color:rgb(162, 209, 170);
+  padding-top: 1em;
 }
 
 input {
   margin: .5em;
 }
 
-#order-btn {
+.order-btn {
   border: none;
   border-radius: .5em;
   background-color:rgba(243, 241, 235, .9);
   color:rgb(6, 95, 21);
   padding: .5em 1em;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-top: .5em;
 }
 
-#order-btn:hover {
+.order-btn:hover {
   font-weight: bold;
+  cursor: pointer;
+}
+
+#pizza-add {
+  font-size: 1.1rem;
+  width: 13em;
+  margin: 0 auto;
 }
 
 #checkout-section {
