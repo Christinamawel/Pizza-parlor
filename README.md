@@ -28,6 +28,18 @@ _if you are unsure how to clone repositorys from github see https://docs.github.
 
 _Because this is just a simple webpage you can also just look at it by simply clicking the github-pages link under Enviorments on the right and then clicking view deployment on the right._
 
+## tests
+
+Describe: Order()
+
+Test: "It should return an order object with three properties for toppings, size, and sides"
+Code: const myPizza = new Pizza(["pepperoni", "olives"], "medium", ["bread", "coke"]);
+Expected Output: Pizza { toppings: ["pepperoni", "olives"], size: "medium", sides: ["bread", "coke"] }
+
+Test: "Order.price should return the total price of all items in the order and crate a new key with the price as the value"
+Code: Order.price();
+Expected Output: 25
+
 ## Known Bugs
 
 * _no known bugs_
