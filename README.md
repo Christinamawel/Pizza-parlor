@@ -21,7 +21,7 @@ _This is a mock pizza restaurant webpage made for Epicodus school as the week 4 
 
 * _Clone this repository to your desktop_
 * _Navigate to the top level of the directory_
-* _open Portfolio/index.html_
+* _open Pizza-Parlor/index.html_
 
 _if you are unsure how to clone repositorys from github see https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository_
 
